@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a{
+            color: red;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: blue;
+        }
+        a::after{ /*Pseudo-classes são simbolizadas com ::*/
+            content:'[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color:darkgray
+        }
+        .especial{
+            background-color: rgb(232, 148, 148);
+        }
+        .especial::before{
+            content: '->';
+        }
+        .especial::after{
+            content: '<-';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repósitório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" class="especial" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.estudonauta.com/" target="_blank">Site do Estudonauta</a></li>
+    </ul>
+</body>
+</html>
