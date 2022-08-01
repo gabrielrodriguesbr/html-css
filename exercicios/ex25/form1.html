@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="ENVIAR"></p>
+    </form>
+</body>
+</html>
+
+<!--<form auto complete: "off"> para desativar o preenchimento automático
+    <form action= -- para mandar os dados pra algum lugar
+    name: mais útil ara php e html e id: mais útil para php
+    label for= :para criar ligações(relações) semânticas
+    
+    Método GET: método padrão de envio de formulários(vanilla), os dados ficam na URL,
+    usado quando os dados forem irrelevantes e não importantes, até 3000bytes(letras), não pode enviar arquivos
+    
+    Método POST: os dados não ficam na URL, não protege os dados apenas oculta, 
+    para dados importantes(mas nada de senhas de cartões e tals), +de3000bytes, para envio de arquivos
+    -->
